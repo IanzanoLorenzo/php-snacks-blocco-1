@@ -22,7 +22,7 @@
 <body>
     <?php if($flag !== null){ ?>
         <h4><?php echo $flag === true ? "Accesso riuscito" : "Accesso negato"; ?></h4>
-        <?php } else{?>
+    <?php } else{?>
     <form action="index.php" method="GET">
         <input type="text" name="nome" placeholder="Inserisci il tuo nome">
         <input type="text" name="email" placeholder="Inserisci la tua mail">
