@@ -43,8 +43,18 @@ $partite = [
         ]
     ]
 ];
-
-foreach ($partite["03/01/2023"] as $index => $partita){
-    echo "<h4>".$partita["squadra_di_casa"]["nome"]." - ".$partita["squadra_ospite"]["nome"]." | ".$partita["squadra_di_casa"]["punti"]." - ".$partita["squadra_ospite"]["punti"]."<h4>";
-}
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php foreach ($partite["03/01/2023"] as $index => $partita){ ?>
+        <h4><?php echo $partita["squadra_di_casa"]["nome"]." - ".$partita["squadra_ospite"]["nome"]." | ".$partita["squadra_di_casa"]["punti"]." - ".$partita["squadra_ospite"]["punti"]; ?></h4>
+    <?php }?>
+</body>
+</html>
